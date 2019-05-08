@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yulia Minka](https://up.htmlacademy.ru/htmlcss/25/user/937043).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/htmlcss/25/user/200490)
 
 ---
 
