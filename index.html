@@ -81,8 +81,28 @@
     <section class="hotels-search">
       <h2 class="title-search">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="search" type="button" name="search-open">Поиск гостиницы в Седоне</button>
-      <form class="search-form" action="hotels-seach" method="get"></form>
+      <div class="search-hotel">
+        <a class="search" href="form.html">Поиск гостиницы в Седоне</a>
+        <form class="booking-form" action="#" method="get">
+          <label for="check-in-date">
+            Дата Заезда:
+          </label>
+          <input type="text" name="check in date" id="check-in-date" value="24 апреля 2017"><br>
+          <label for="check-out-date">
+            Дата выезда:
+          </label>
+          <input type="text" name="check out date" id="check-out-date" value="4 июля 2017"><br>
+          <label for="adults-number">
+            Взрослые
+          </label>
+          <input type="number" name="adults number" id="adults-number" value="2">
+          <label for="children-number">
+            Дети
+          </label>
+          <input type="number" name="children number" id="children-number" value="0"><br>
+          <input type="submit" value="Найти">
+        </form>
+      </div>
     </section>
     <footer class="main-footer">
       <p class="visit-place-hashtag">#VisitSedona</p>
