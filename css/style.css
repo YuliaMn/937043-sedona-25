@@ -7,7 +7,7 @@ body {
 }
 
 div .wrapper {
- background-image: url("whiteback.jpg");
+ background-image: url("img/whiteback.jpg");
 }
 
 .site-navigation {
@@ -32,7 +32,7 @@ div .wrapper {
   text-align: center;
 }
 .banner {
-  background-image: url("mountain.jpg");
+  background-image: url("img/mountain.jpg");
 }
 
 .advantages h2,
@@ -43,7 +43,7 @@ h3 {
   font-size: 30px;
 }
 .banner::after {
-  background-image: url("mountainbottom.png");
+  background-image: url("img/mountainbottom.png");
 }
 input[type="submit"] {
   font-size: 21px;
