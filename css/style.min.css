@@ -5,6 +5,13 @@ body {
  line-height: 26px;
  font-family: "PT Sans", Arial, sans-serif;
 }
+ul,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
  .main-header {
   position: relative;
   height: 56px
@@ -44,15 +51,16 @@ body {
   font-weight:bold;
 }
 
-   .site-navigation li:first-child {
-     padding-left: 40px;
-   }
-   .site-navigation li:nth-child(2) {
-     padding-right: 280px;
-   }
-   .site-navigation li:last-child {
-     padding-right: 70px;
-   }
+.site-navigation li:first-child {
+    padding-left: 72px;
+  }
+  .site-navigation li:nth-child(2) {
+    margin-right: 240px;
+  }
+
+  .site-navigation li:last-child {
+    padding-right: 72px;
+  }
    .site-navigation a {
      text-decoration: none;
      color: #000000;
@@ -60,14 +68,141 @@ body {
      text-transform: uppercase;
    }
 
-
-.hotels ul {
+div .selection {
+  box-sizing: border-box;
+  min-height: 215px;
+  color: #ffffff;
+  background: #5d7284;
+  background: url("../img/mountainpage2.jpg") no-repeat;
+  background-position: center;
+}
+.search-results {
+  background: #fefefe;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 80px;
+  box-sizing: border-box;
+  height: 85px;
+}
+ .hotels {
+  display: flex;
+  flex-direction: column;
+}
+.hotels-item {
+  display: flex;
   list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  height: 150px;
+}
+.hotels-item figure {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+.hotels-item-content a {
+  text-decoration: none;
+  color: #000000;
+}
+.hotels-item-content h3 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding: 0 0 8px;
+   margin: 0;
+}
+.hotels-item-content {
+  float: left;
+   text-align: left;
+   padding: 0;
+   text-transform: uppercase;
+}
+.accomodation-type {
+  display: inline-block;
+   min-width: 116px;
+   padding-bottom: 12px;
+}
+.hotel-booking a:first-child {
+ display: inline-block;
+ vertical-align: top;
+ font-size: 14px;
+ font-weight: bold;
+ font-family: "PT Sans", sans-serif;
+ line-height: 21px;
+ text-decoration: none;
+ text-transform: uppercase;
+ text-align: center;
+ color: #fffFff;
+ background: #8dbad6;
+ padding: 3px 15px;
+}
+.hotel-booking a:last-child {
+  background-color: #766357;
+  color: #fffFff;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px 10px;
+}
+ .hotels-item-statistic {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   height: 97px;
+   width: 110px;
+   text-align: right;
+   padding-left: 530px;
+ }
+.hotels-item-statistic p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 4px;
+  width: 110px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #666;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f2f2f2
 }
 
-h3 {
-  font-size: 21px;
+footer {
+    display: flex;
+    width: 1200px;
+    padding: 37px 0;
+    background: #fefefe;
+    justify-content: space-between;
+    align-items: center;
 }
-.visit-place-hashtag {
+ .visit-place-hashtag {
   font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 132px;
+  text-transform: uppercase;
+ }
+.main-footer ul {
+ list-style: none;
 }
+.main-footer li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+.social-button span {
+  position: relative;
+ display: block;
+ width: 46px;
+ height: 46px;
+ background-color: #81b3d2;
+}
+ .footer-copyright {
+   padding-right: 98px;
+   padding-bottom: 50px;
+ }
