@@ -35,15 +35,13 @@ body {
   list-style: none;
   top: 0;
   display: flex;
-  width: auto;
   justify-content: space-around;
   font-weight:bold;
   font-size: 14px;
   color:#000000;
 }
 
-.site-navigation li {
-  display: flex;
+.site-navigation li  {
   padding-top: 15px;
   padding-bottom: 15px;
   text-decoration: none;
@@ -54,16 +52,16 @@ body {
 
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
-  float: left;
+  text-align: left;
 }
 
 .site-navigation li:nth-child(3),
 .site-navigation li:last-child {
-  float: right;
+  text-align: right;
 }
 
 .site-navigation li:nth-child(2) {
-  padding-right: 270px;
+  padding-right: 250px;
 }
 
 .site-navigation a {
@@ -72,7 +70,14 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
 
+.site-navigation a:active {
+  color: #d1d1d1;
+}
 .banner {
   background:
   url("../img/mountainbottom.png") no-repeat 0 454px,
@@ -87,14 +92,13 @@ body {
 }
 
 .advantages {
-  height: 1315px;
   line-height: 21px;
 }
 
 .advantages-promo-text {
   width: 600px;
   padding-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 55px;
   padding-left: 300px;
   text-align:center;
   text-transform: uppercase;
@@ -111,18 +115,19 @@ body {
   padding: 0;
   list-style: none;
 }
-
+.column-one {
+  min-height: 256px;
+}
 .column-one .text-content {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   float: left;
   color: #ffffff;
   background-color:#81b3d2;
   text-transform: uppercase;
-  margin-top: -102px;
   padding-left: 0;
 }
 
@@ -143,6 +148,7 @@ body {
   url("../img/burger.png") no-repeat 580px 60px,
   url("../img/gift.png") no-repeat 985px 55px;
 }
+
 
 .advantages-item-list-one h3 {
   font-size: 21px;
@@ -185,9 +191,7 @@ body {
   justify-content:center;
   color:#ffffff;
   background-color:#81b3d2;
-  height:256px;
-  float: right;
-  margin-top: -102px;
+  height: 256px;
 }
 
 .advantages-item-title {
@@ -215,17 +219,14 @@ body {
   font-size: 21px;
   text-transform: uppercase;
   line-height: 21px;
-  padding-right: 150px;
-  background-color:#81b3d2;
-  height:256px;
+  background-color: #81b3d2;
+  height: 256px;
 }
 
 .advantages-item-pic-left {
   color:#ffffff;
   background-color:#81b3d2;
-  height:256px;
-  float: left;
-  margin-top: -256px;
+
 }
 
 .column-two .text-content {
@@ -233,12 +234,10 @@ body {
   text-align: center;
   vertical-align: middle;
   width: 400px;
-  height: 256px;
   float: right;
   color: #ffffff;
   background-color:#81b3d2;
   text-transform: uppercase;
-  margin-right: -145px;
 }
 
 .search-hotel {
@@ -286,7 +285,7 @@ body {
 	height: 395px;
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
-.booking-form p {
+.booking-form div {
   text-transform: uppercase;
 }
 .booking-form label {
@@ -341,17 +340,27 @@ body {
 
 .main-footer ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+
+}
+
+.social-icons {
+
 }
 
 .main-footer li {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 1px;
+  text-align: center;
+  margin: 2px;
 }
 
-.social-button span {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.social-button  {
   position: relative;
   display: block;
   width: 46px;
