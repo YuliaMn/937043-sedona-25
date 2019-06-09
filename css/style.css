@@ -579,14 +579,210 @@ input[type="submit"]:active {
 
    /*hotels-page*/
 
-div .selection {
-  box-sizing: border-box;
+ .selection-accomodation {
   min-height: 215px;
   color: #ffffff;
   background: #5d7284;
   background: url("../img/mountainpage2.jpg") no-repeat;
   background-position: center;
 }
+
+.selection-accomodation form {
+  display: flex;
+  padding-left: 60px;
+  padding-top: 20px;
+  width: 1060px;
+  font-size: 14px;
+}
+
+.checkboxes {
+  display: flex;
+  width: 145px;
+  border: none;
+  text-transform: uppercase;
+}
+.checkboxes input {
+  display: none;
+}
+
+.checkboxes label {
+  margin-bottom: 20px;
+}
+
+.checkboxes legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.checkboxes:first-child {
+  padding-right: 100px;
+}
+.input-checkbox + label:before {
+    content:"";
+    position: relative;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkboxoff.svg");
+    background-repeat: no-repeat;
+}
+
+.input-checkbox:checked + label:before {
+    background-image: url("../img/checkboxon.svg");
+}
+
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 740px;
+  position: absolute;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  padding-top: 2px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.sorting {
+	display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-around;
+	border-bottom: 1px solid #e5e5e5;
+}
+.sorting a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cacaca;
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+ .found {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sort {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.sort-item:hover {
+	color: #81b3d2;
+}
+
 
 .search-results {
   background: #fefefe;

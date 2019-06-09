@@ -22,12 +22,53 @@
         </ul>
       </nav>
     </header>
-    <div class="selection">
-      <!-- Написано не делать -->
-      <!-- Еще не знаю как делать -->
+    <div class="selection-accomodation">
+      <form class="selection-form" action="#" method="post">
+        <fieldset class="checkboxes">
+          <legend>Инфраструктура:</legend>
+            <input class="input-checkbox" id="pool" type="checkbox" checked>
+            <label for="pool">Бассейн</label>
+            <input class="input-checkbox" id="parking" type="checkbox">
+            <label for="parking">Парковка</label>
+            <input class="input-checkbox" id="wi-fi" type="checkbox">
+            <label for="wi-fi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="checkboxes">
+          <legend>Тип жилья:</legend>
+          <input class="input-checkbox" id="hotel" type="checkbox" checked>
+          <label for="hotel">Гостиница</label>
+          <input class="input-checkbox" id="motel" type="checkbox" checked>
+          <label for="motel">Мотель</label>
+          <input class="input-checkbox" id="apartments" type="checkbox" checked>
+          <label for="apartments">Апартаменты</label>
+        </fieldset>
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+      </form>
     </div>
-    <div class="search-results">
-      <!--Написано не делать -->
+    <div class="sorting">
+        <span class="found">Найдено: 3</span>
+        <span class="sort">Сортировка:</span>
+        <span><a class="sort-item price-sort" href="#">По цене</a></span>
+        <span><a class="sort-item type-sort" href="#">По типу</a></span>
+        <span><a class="sort-item rate-sort" href="#">По рейтингу</a></span>
+        <div class="arrow">
+          <a href="#" class="up"></a>
+          <a href="#" class="down"></a>
+        </div>
     </div>
     <section class="hotels">
       <ul class="hotels-list">
