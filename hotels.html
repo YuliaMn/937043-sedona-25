@@ -26,21 +26,37 @@
       <form class="selection-form" action="#" method="post">
         <fieldset class="checkboxes">
           <legend>Инфраструктура:</legend>
-            <input class="input-checkbox" id="pool" type="checkbox" checked>
-            <label for="pool">Бассейн</label>
-            <input class="input-checkbox" id="parking" type="checkbox">
-            <label for="parking">Парковка</label>
-            <input class="input-checkbox" id="wi-fi" type="checkbox">
-            <label for="wi-fi">Wi-Fi</label>
+          <ul>
+            <li class="filter-option">
+             <input class="input-checkbox" id="pool" type="checkbox" checked>
+             <label for="pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="input-checkbox" id="parking" type="checkbox">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+             <input class="input-checkbox" id="wi-fi" type="checkbox">
+             <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="checkboxes">
           <legend>Тип жилья:</legend>
-          <input class="input-checkbox" id="hotel" type="checkbox" checked>
-          <label for="hotel">Гостиница</label>
-          <input class="input-checkbox" id="motel" type="checkbox" checked>
-          <label for="motel">Мотель</label>
-          <input class="input-checkbox" id="apartments" type="checkbox" checked>
-          <label for="apartments">Апартаменты</label>
+          <ul>
+            <li class="filter-option">
+             <input class="input-checkbox" id="hotel" type="checkbox" checked>
+             <label for="hotel">Гостиница</label>
+            </li>
+            <li class="filter-option">
+             <input class="input-checkbox" id="motel" type="checkbox" checked>
+             <label for="motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+             <input class="input-checkbox" id="apartments" type="checkbox" checked>
+             <label for="apartments">Апартаменты</label>
+            </li>
+         </ul>
         </fieldset>
         <div class="filter-range">
           <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -60,11 +76,12 @@
       </form>
     </div>
     <div class="sorting">
-        <span class="found">Найдено: 3</span>
-        <span class="sort">Сортировка:</span>
-        <span><a class="sort-item price-sort" href="#">По цене</a></span>
-        <span><a class="sort-item type-sort" href="#">По типу</a></span>
-        <span><a class="sort-item rate-sort" href="#">По рейтингу</a></span>
+        <p class="found">Найдено: 3</p>
+        <p class="sort">Сортировка:</p>
+        <ul class="sorting-list">
+        <li><a class="sort-item price-sort" href="#">По цене</a></li>
+        <li><a class="sort-item type-sort" href="#">По типу</a></li>
+        <li><a class="sort-item rate-sort" href="#">По рейтингу</a></li>
         <div class="arrow">
           <a href="#" class="up"></a>
           <a href="#" class="down"></a>
