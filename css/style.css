@@ -127,7 +127,7 @@ body {
 
 
 .column-one p {
-  padding-right: 55px;
+  padding-right: 50px;
   padding-left: 55px;
 }
 
@@ -198,21 +198,19 @@ body {
   align-items: center;
   min-height: 257px;
   background-color: #eeeeee;
-}
-
-.advantages-item-list-two .advantages-item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 30px;
   line-height: 21px;
+  max-width: 1200px;
+}
+.advantages-item-list-two li {
+  width: 400px;
 }
 
 .advantages-item-list-two h3 {
   font-size: 21px;
-  width: 40%;
-  padding-left: 115px;
+  /*width: 40%;
+  padding-left: 115px;*/
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .advantages-item-list-two p {
