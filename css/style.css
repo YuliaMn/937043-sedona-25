@@ -172,10 +172,13 @@ body {
 
 .advantages-item-list-one {
   width: 1200px;
-  min-height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -188,18 +191,21 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+.advantages-item-list-one li {
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
 .advantages-city-accomodation {
   padding-bottom: 12px;
-  background: url("../img/house.svg") no-repeat 92px 0;
+  background: url("../img/house.svg") no-repeat 92px 57px;
 }
 
 .advantages-city-food {
-  background: url("../img/burger.svg") no-repeat 120px 0;
+  background: url("../img/burger.svg") no-repeat 120px 57px;
 }
 
 .advantages-city-souvenirs {
-  background: url("../img/gift.svg") no-repeat 111px 0;
+  background: url("../img/gift.svg") no-repeat 111px 57px;
 }
 
 .advantages-item-list-one h3 {
@@ -213,11 +219,12 @@ body {
   width: 257px;
   font-size: 14px;
   line-height: 21px;
+  padding-bottom: 12px;
 }
 
 .advantages-city-food p {
   width: 285px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-size: 14px;
   line-height: 21px;
   padding-left: 14px;
@@ -299,7 +306,6 @@ body {
 
 .advantages-item-list-two {
   max-width: 1200px;
-  min-height: 257px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +326,8 @@ body {
 
 .advantages-item-list-two li {
   width: 400px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 45px;
   padding-left: 40px;
   padding-right: 65px;
   -webkit-box-sizing: border-box;
@@ -596,7 +603,7 @@ input[type="submit"]:active {
 
 .main-footer {
   width: 1200px;
-  min-height: 120px;
+  height: 120px;
   position: absolute;
   bottom: 8px;
   left: 0;
@@ -619,7 +626,7 @@ input[type="submit"]:active {
 
 .inner-footer {
   width: 1200px;
-  min-height: 100px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,6 +638,8 @@ input[type="submit"]:active {
           align-items: center;
   background-color: #ffffff;
   opacity: 0.9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer-copyright,
@@ -687,19 +696,14 @@ input[type="submit"]:active {
   padding-right: 15px;
 }
 
-.main-footer li {
-  display: inline-block;
-  margin: 2px;
-  vertical-align: middle;
-  text-align: center;
-}
-
+.main-footer li,
 .inner-footer li {
   display: inline-block;
   margin: 2px;
   vertical-align: middle;
   text-align: center;
 }
+
 
 .visually-hidden {
   width: 1px;
@@ -763,7 +767,7 @@ input[type="submit"]:active {
   display: -ms-flexbox;
   display: flex;
   padding-top: 25px;
-  padding-left: 59px;
+  padding-left: 60px;
   text-transform: uppercase;
 }
 
@@ -869,8 +873,9 @@ input[type="submit"]:active {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
+  padding-top: 5px;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 21px;
   cursor: pointer;
 }
 
@@ -878,7 +883,6 @@ input[type="submit"]:active {
 .price-controls .max-price {
   width: 90px;
   padding-left: 55px;
-
 }
 
 .price-controls input {
@@ -957,7 +961,7 @@ input[type="submit"]:active {
   display: -ms-flexbox;
   display: flex;
   padding-top: 6px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   padding-left: 72px;
   padding-right: 72px;
   border-bottom: 1px solid #e5e5e5;
@@ -1068,7 +1072,6 @@ input[type="submit"]:active {
 }
 
 .hotels-item  {
-  min-height: 152px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,6 +1080,8 @@ input[type="submit"]:active {
           -webkit-box-align: center;
               align-items: center;
   padding-left: 38px;
+  padding-top: 15px;
+  padding-bottom: 9px;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1203,16 +1208,13 @@ input[type="submit"]:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 97px;
   width: 110px;
   text-align: right;
-  padding-left: 522px;
-  padding-bottom: 0;
+  padding-left: 525px;
 }
 
 .hotels-item-statistic p {
   width: 100px;
-  margin-bottom: 6px;
   padding: 4px;
   font-size: 14px;
   font-weight: 400;
@@ -1224,6 +1226,10 @@ input[type="submit"]:active {
   background-color: #f2f2f2
 }
 
+.hotels-item-statistic .stars {
+  padding-top: 7px;
+  padding-bottom: 23px;
+}
 .show {
   visibility: hidden;
   opacity: 0;
