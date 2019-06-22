@@ -191,10 +191,12 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 .advantages-item-list-one li {
   padding-top: 57px;
   padding-bottom: 57px;
 }
+
 .advantages-city-accomodation {
   padding-bottom: 12px;
   background: url("../img/house.svg") no-repeat 92px 57px;
@@ -533,7 +535,7 @@ body {
   background-color: #ffffff;
 }
 
-input[type="submit"] {
+.form-button[type="submit"] {
   width: 458px;
   height: 58px;
   display: block;
@@ -546,12 +548,12 @@ input[type="submit"] {
   border: none;
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+.form-button:hover,
+.form-button:focus {
   background-color: #669ec0;
 }
 
-input[type="submit"]:active {
+.form-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -703,7 +705,6 @@ input[type="submit"]:active {
   vertical-align: middle;
   text-align: center;
 }
-
 
 .visually-hidden {
   width: 1px;
@@ -1215,6 +1216,8 @@ input[type="submit"]:active {
 
 .hotels-item-statistic p {
   width: 100px;
+  margin-top: 38px;
+  margin-bottom: 5px;
   padding: 4px;
   font-size: 14px;
   font-weight: 400;
@@ -1223,17 +1226,53 @@ input[type="submit"]:active {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
-.hotels-item-statistic .stars {
+.stars {
+  margin-left: 18px;
   padding-top: 7px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  background-size: 20px 20px;
 }
+
+.three-star-rate {
+  margin-left: 40px;
+}
+
+.two-star-rate {
+  margin-left: 65px;
+}
+
 .show {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  animation-name: slide-down;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  65% {
+    transform: translateY(-4%);
+  }
+  80% {
+    transform: translateY(4%);
+  }
+  95% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }*/
 }
